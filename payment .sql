@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 06, 2020 at 05:18 PM
+-- Generation Time: May 06, 2020 at 05:39 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.4
 
@@ -41,7 +41,8 @@ CREATE TABLE `payment` (
 --
 
 INSERT INTO `payment` (`Pay_ID`, `Pay_type`, `Pay_cno`, `Pay_expdate`, `Pay_code`, `Appointment_ID`) VALUES
-(12, 'test', 234241371, '20/20', 123, '123432235');
+(12, 'test', 234241371, '20/20', 123, '123432235'),
+(13, 'visa', 456789076, '12/20', 123, '567890908');
 
 --
 -- Indexes for dumped tables
@@ -61,7 +62,7 @@ ALTER TABLE `payment`
 -- AUTO_INCREMENT for table `payment`
 --
 ALTER TABLE `payment`
-  MODIFY `Pay_ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `Pay_ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
